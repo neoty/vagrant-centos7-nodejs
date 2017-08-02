@@ -21,4 +21,8 @@ echo "wget install"
  sudo yum install wget -y
 echo "yarn install"
  npm install yarn -g
+echo "epel install"
+ sudo rpm -ivh /home/vagrant/share/resources/epel-release-7-10.noarch.rpm
+echo "htop"
+ sudo yum install htop -y
 echo "vagrant ssh 접속후 sudo mysql_secure_installation 해주세요!"
