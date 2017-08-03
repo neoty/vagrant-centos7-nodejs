@@ -6,3 +6,7 @@
 > vagrant up
 > vagrant ssh
 ```
+
+```
+if you feel hang on the prompt for 5 minutes. please type enter.
+```
