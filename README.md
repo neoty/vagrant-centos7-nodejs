@@ -1,5 +1,4 @@
 # 용도
-======================
 ```
 centos7 + nginx + nvm + nodejs lts + mariadb 5.x.x(utf8) + pm2 + yarn + htop 
 ```
