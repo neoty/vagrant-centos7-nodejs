@@ -4,12 +4,12 @@ centos7 + nginx + nvm + nodejs lts + mariadb 5.x.x(utf8) + pm2 + yarn + htop
 ```
 
 # 설치
-======================
 ```
-> git clone https://github.com/neoty/vagrant-centos7-nodejs
-> vagrant plugin install vagrant-vbguest
-> vagrant up
-> vagrant ssh
+$ git clone https://github.com/neoty/vagrant-centos7-nodejs
+> Vagrantfile 내용을 자신의 환경에 맞게 수정합니다.
+$ vagrant plugin install vagrant-vbguest
+$ vagrant up
+$ vagrant ssh
 ```
 
 ```
