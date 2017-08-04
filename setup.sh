@@ -62,4 +62,6 @@ echo "selinux off"
 echo "net-tools install"
  sudo yum install net-tools -y
 
-echo "vagrant ssh 접속후 sudo mysql_secure_installation 해주세요!"
+echo "============================="
+echo "Complete!"
+echo "============================="
