@@ -19,5 +19,5 @@ $ vagrant ssh
 
 ```
 1. 설치시 3분 이상 응답이 없으면 Enter 키를 눌러주세요.
-2. Linux root, MariaDB root의 초기 비밀번호를 vagrant 입니다.
+2. Linux, MariaDB의 모든 초기 비밀번호는 vagrant 입니다.
 ```

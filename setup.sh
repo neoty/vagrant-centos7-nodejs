@@ -40,6 +40,7 @@ UPDATE mysql.user SET Password=PASSWORD('vagrant') WHERE User='root';
 DELETE FROM mysql.user WHERE User='root' AND Host NOT IN ('localhost', '127.0.0.1', '::1');
 DELETE FROM mysql.user WHERE User='';
 DELETE FROM mysql.db WHERE Db='test' OR Db='test_%';
+DROP DATABASE test;
 FLUSH PRIVILEGES;
 EOF
 
@@ -61,6 +62,10 @@ echo "selinux off"
  
 echo "net-tools install"
  sudo yum install net-tools -y
+
+echo "PasswordAuthentication enable"
+ sudo sed -i -e  's/PasswordAuthentication no/PasswordAuthentication yes/g' /etc/ssh/sshd_config
+ sudo service sshd restart
 
 echo "============================="
 echo "Complete!"
