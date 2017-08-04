@@ -58,5 +58,8 @@ echo "htop"
 echo "selinux off"
  sudo sed -i -e 's/SELINUX=enforcing/SELINUX=disabled/g' /etc/selinux/config
  sudo setenforce 0
+ 
+echo "net-tools install"
+ sudo yum install net-tools
 
 echo "vagrant ssh 접속후 sudo mysql_secure_installation 해주세요!"
