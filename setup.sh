@@ -67,6 +67,9 @@ echo "PasswordAuthentication enable"
  sudo sed -i -e  's/PasswordAuthentication no/PasswordAuthentication yes/g' /etc/ssh/sshd_config
  sudo service sshd restart
 
+echo "timezone" 
+ sudo cp -p /usr/share/zoneinfo/Asia/Seoul /etc/localtime
+
 echo "============================="
 echo "Complete!"
 echo "============================="

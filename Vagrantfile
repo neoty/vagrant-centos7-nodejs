@@ -18,7 +18,7 @@ Vagrant.configure("2") do |config|
     memory = 1024
 
     # Host OS 에서 마운트할 소스의 위치입니다.(소스폴더의 경로를 적어주시면 됩니다.)
-    host_source_synced_folder = "."
+    host_source_synced_folder = "/Volumes/data/004. source/001. neoty"
 
     # Guest OS 에서 마운트될 소스의 위치 입니다.(특별한 경우가 아니라면 수정하지마세요.)
     guest_source_synced_folder = "/home/source"
