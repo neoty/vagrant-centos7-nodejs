@@ -38,8 +38,10 @@ Vagrant.configure("2") do |config|
         v.cpus = cpus
     end
 
-    config.vm.synced_folder ".", "/home/vagrant/share", :mount_options => ["dmode=777", "fmode=666"]
-    config.vm.synced_folder host_source_synced_folder, guest_source_synced_folder, :mount_options => ["dmode=777", "fmode=666"]
+    config.vm.synced_folder ".", "/home/vagrant/share", type:"nfs"
+    #config.vm.synced_folder ".", "/home/vagrant/share", type:"rsync" ,:mount_options => ["dmode=777", "fmode=666"]
+    config.vm.synced_folder host_source_synced_folder, guest_source_synced_folder, type:"nfs"
+    #config.vm.synced_folder host_source_synced_folder, guest_source_synced_folder, :mount_options => ["dmode=777", "fmode=666"]
 
     # 최초 vagrant up 할시 setup.sh 내용을 읽어들여 실행시킵니다.
     # setup.sh 를 수정할시 vagrant provision 해주세요.
